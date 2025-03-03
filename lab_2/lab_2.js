@@ -222,5 +222,6 @@ window.onload = function () {
             outputElement.innerHTML = `${orbitHeight / 1000} км`;
         } else {
             outputElement.innerHTML = `${(orbitHeight / 1000).toFixed(3)} км`;
+        };
     };
 };
