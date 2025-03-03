@@ -11,14 +11,46 @@ export class MainPage {
     }
 
     getContainerHTML() {
-        return `<div id="main-page" class="d-flex flex-wrap"></div>`;
+        return `<div id="main-page"></div>`;
     }
+    
+    getLogosHTML() {
+        return `
+            <div id="logos-container">
+                <img src="./logo/logo1.png" alt="Логотип" class="logo">
+            </div>
+        `;
+    }
+    
+    
+    getContainerHTML() {
+        return `
+            ${this.getLogosHTML()} 
+            <div id="main-page"></div>
+        `;
+    }
+    
 
     getData() {
         return [
-            { id: 1, src: "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg", title: "Акция 1", text: "Такой акции вы еще не видели 1" },
-            { id: 2, src: "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg", title: "Акция 2", text: "Такой акции вы еще не видели 2" },
-            { id: 3, src: "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg", title: "Акция 3", text: "Такой акции вы еще не видели 3" }
+            { 
+                id: 1, 
+                src:"https://api.mirror.bmstu.ru/upload/universal/99/65cdfa0ec0ccc.png",
+                title: "Выскоотехнологические системы обеспечения безопасности, коммуникации и специального назначения",
+                text: "Подготовка специалистов для решения всех типов задач" 
+            },
+            { 
+                id: 2, 
+                src: "https://api.mirror.bmstu.ru/upload/universal/98/65cdf9cc2d0c2.png", 
+                title: "Энергетика и экология", 
+                text: "Подготовка инженеров в области энергомашиностроения и систем жизнеобеспечения" 
+            },
+            { 
+                id: 3, 
+                src: "https://api.mirror.bmstu.ru/upload/universal/96/65cdf92174131.png", 
+                title: "Авиация и космос", 
+                text: "Подготовка конструкторов космической и авиационной техники" 
+            }
         ];
     }
 

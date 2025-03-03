@@ -5,12 +5,12 @@ export class ProductCardComponent {
 
     getCardHTML(data) {
         return `
-            <div class="card custom-card">
-                <img class="card-img-top" src="${data.src}" alt="картинка">
-                <div class="card-body">
+            <div class="product-card">
+                <img class="card-img-top" src="${data.src}" alt="Изображение">
+                <div class="product-card-content">
                     <h5 class="card-title">${data.title}</h5>
                     <p class="card-text">${data.text}</p>
-                    <button class="btn btn-primary" id="click-card-${data.id}" data-id="${data.id}">Нажми на меня</button>
+                    <button class="btn btn-primary" id="click-card-${data.id}" data-id="${data.id}">Направление подготовки</button>
                 </div>
             </div>
         `;

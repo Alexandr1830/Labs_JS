@@ -9,23 +9,33 @@ export class ProductPage {
     }
 
     getData() {
+        const imageUrls = {
+            1: "https://api.mirror.bmstu.ru/upload/universal/99/65cdfa0ec0ccc.png",
+            2: "https://api.mirror.bmstu.ru/upload/universal/98/65cdf9cc2d0c2.png",
+            3: "https://api.mirror.bmstu.ru/upload/universal/96/65cdf92174131.png"
+        };
+    
         return {
             id: this.id,
-            src: "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
+            src: imageUrls[this.id],
             title: `Акция ${this.id}`,
             text: "Такой акции вы еще не видели"
         };
     }
+    
 
     getHTML() {
         return `
             <div id="product-page">
-                <h2>Страница товара</h2>
+                <h2 class="product-title">Страница товара</h2>
                 <div id="product-container"></div> 
                 <div id="back-button-container"></div>
             </div>
         `;
     }
+    
+    
+    
 
     clickBack() {
         console.log("[ProductPage] Клик по кнопке 'Назад', возврат на MainPage");
