@@ -60,11 +60,11 @@ window.onload = function () {
     // Кнопка "%"
     document.getElementById("btn_op_percent").onclick = function () {
         if (a !== '') {
-            let firstNumber = parseFloat(a);  // Первое число
-            let secondNumber = parseFloat(b); // Второе число
+            let firstNumber = parseFloat(a);
+            let secondNumber = parseFloat(b);
 
             if (selectedOperation === null) {
-                a = (firstNumber / 100).toString(); // 50% → 0.5
+                a = (firstNumber / 100).toString();
                 outputElement.innerHTML = a;
             } 
             else if (!isNaN(secondNumber) && b !== '') {
