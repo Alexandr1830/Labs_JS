@@ -5,11 +5,16 @@ export class ProductComponent {
 
     getHTML(data) {
         return `
-            <div class="product-card">
-                <img src="${data.src}" class="product-image" alt="Изображение товара">
-                <div class="product-details">
-                    <h2>${data.title}</h2>
-                    <p>${data.text}</p>
+            <div class="product-container">
+                <h2 class="product-title">${data.title}</h2> 
+                <div class="product-content">
+                    <img src="${data.src}" class="product-image" alt="Изображение товара">
+                    <div class="product-texts">
+                        <p class="text1">${data.text1}</p>
+                        <p class="text2">${data.text2}</p>
+                        <p class="text3">${data.text3}</p>
+                        <p class="text4">${data.text4}</p>
+                    </div>
                 </div>
             </div>
         `;

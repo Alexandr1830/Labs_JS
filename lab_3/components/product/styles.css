@@ -1,55 +1,103 @@
+
+/*{
+    outline: 1px solid red !important;
+}*/
+
+#logo-container1 {
+    position: relative; 
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px;
+    background: #f9f9f9;
+}
+
+.logo1 {
+    width: 250px; 
+    height: auto; 
+    display: block; 
+    margin: 0;
+    padding: 0;
+}
+
 #product-page {
-    max-width: 800px;
-    margin: 40px auto;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 50px; 
+    padding: 20px; 
+    background: #f9f9f9;
+    z-index: -1; 
+}
+
+.product-container {
+    width: 100%;
+    max-width: 900px;
     padding: 20px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center;
-}
-
-#product-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center;
-    gap: 20px; 
-    width: 100%;
-}
-
-.product-card {
-    width: 100%;
-    max-width: 600px; 
+    background: #f9f9f9;
     display: flex;
     flex-direction: column;
-    background: #f9f9f9;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: relative; 
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.product-title {
+    font-size: clamp(24px, 4vw, 40px);
+    font-style: normal;
+    font-weight: 700; 
+    color: #303030; 
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 90%;
+}
+
+.product-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end; 
+    width: 100%;
 }
 
 .product-image {
-    max-width: 150px; 
+    max-width: 50%; 
     height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+    object-fit: contain;
+    display: block;
+    align-self: flex-end; 
+    margin-bottom: 30px;
 }
 
-.product-button {
-    align-self: flex-start;
-    background: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: auto; 
+.product-texts {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    width: 50%; 
+    margin-bottom: 50px;
+    margin-left: 10px;
 }
+
+.text1, .text2, .text3, .text4 {
+    font-size: 24px; 
+    font-weight: 400; 
+    color: #a2a2a2; 
+    line-height: normal; 
+    text-align: left; 
+    margin-bottom: 25px;
+}
+
+
+
+
+
+

@@ -16,7 +16,7 @@ export class MainPage {
     
     getLogosHTML() {
         return `
-            <div id="logos-container">
+            <div id="logo-container">
                 <img src="./logo/logo1.png" alt="Логотип" class="logo">
             </div>
         `;
@@ -37,7 +37,7 @@ export class MainPage {
                 id: 1, 
                 src:"https://api.mirror.bmstu.ru/upload/universal/99/65cdfa0ec0ccc.png",
                 title: "Выскоотехнологические системы обеспечения безопасности, коммуникации и специального назначения",
-                text: "Подготовка специалистов для решения всех типов задач" 
+                text: "Подготовка специалистов для решения всех типов инженерных задач" 
             },
             { 
                 id: 2, 
