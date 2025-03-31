@@ -3,18 +3,18 @@ const path = require('path');
 
 class DBConnector {
     constructor(filename) {
-        this.filename = filename;
+        this.path = path.join(process.cwd(), 'db', filename);
     }
 
     readFile() {
-        return fs.readFileSync(path.join(process.cwd(), 'db', this.filename), "utf8");
+        return fs.readFileSync(this.path, 'utf-8');
     }
 
     writeFile(data) {
-        fs.writeFileSync(path.join(process.cwd(), 'db', this.filename), data, "utf8");
+        fs.writeFileSync(this.path, data, 'utf-8');
     }
 }
 
 module.exports = {
-     DBConnector,
+    DBConnector,
 };
