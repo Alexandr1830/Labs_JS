@@ -25,15 +25,15 @@ body {
 
 /* опишем базовый стиль кнопки калькулятора */
 .my-btn { 
-    margin-right: 5px;           /* задаем отступ от кнопки справа */
-    margin-top: 5px;             /* задаем отступ от кнопки сверху*/
-    width: 70px;                 /* задаем ширину кнопки */
-    height: 70px;                /* задаем высоту кнопки */
+    margin-right: 5px;           
+        margin-top: 5px;             
+    width: 70px;                 
+    height: 70px;                
     border-radius: 50%;          /* округляем кнопку */
-    border: none;                /* отключаем обводку */
-    background: #303030;       /* задаем темно серый цвет кнопки */
+    border: none;                
+    background: #303030;       
     color: white;              /* задаем белый цвет текста внутри кнопки */
-    font-size: 2rem;             /* увеличим размер шрифта */
+    font-size: 2rem;             
     font-family: Arial, Helvetica, sans-serif; 
     cursor: pointer;             /* при наведении на кнопку курсор будет изменен
                                     со стрелки на 'указательный палец' */
@@ -59,7 +59,6 @@ body {
     border: 2px solid #303030;
 }
   
-/* active - это состояние активации элемента. В случае кнопки - нажатие на нее */
 .my-btn:active {
     filter: brightness(130%); /* увеличим интенсивность цвета для эффекта вспышки */
 }
@@ -81,7 +80,7 @@ body {
     border-radius: 34px;   /* подкорректируем округлость */
 }
   
-/* селектор для поля вывода результата */
+
 .result { 
     width: 300px;
     height: 70px;
