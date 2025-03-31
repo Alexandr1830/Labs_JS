@@ -14,7 +14,11 @@ class StocksService {
     }
 
     static deleteStock(id) {
-        return StocksDAO.delete(id).toJSON();
+        return StocksDAO.delete(id);
+    }
+
+    static updateStock(id, stockData) {
+        return StocksDAO.update(id, stockData).toJSON();
     }
 }
 
