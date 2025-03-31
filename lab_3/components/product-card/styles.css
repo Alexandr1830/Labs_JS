@@ -34,9 +34,18 @@
     display: flex; 
     flex-direction: column; 
     position: relative; 
-    background: #fff; 
+    background: #f9f9f9; 
     align-items: flex-start; 
     font-family: Arial, sans-serif; 
+}
+
+/* Смещение карточек в шахматном порядке */
+.product-card:nth-child(odd) { /* нечетные карточки */
+    transform: translateX(-50%); /* Смещаем влево на 50% ширины */
+}
+
+.product-card:nth-child(even) { /* четные карточки*/
+    transform: translateX(50%); /* Смещаем вправо на 50% ширины */
 }
 
 .product-card .card-title {
