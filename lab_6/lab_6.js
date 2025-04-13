@@ -1,4 +1,4 @@
-console.log("[lab_5.js] Запуск приложения");
+console.log("[lab_6.js] Запуск приложения");
 
 import { MainPage } from "./pages/main/index.js";
 

@@ -16,12 +16,13 @@ export class ProductComponent {
                         <p class="text4">${data.text4}</p>
                     </div>
                 </div>
-            </div>
+            
+        </div>
         `;
     }
         
     render(data) {
-        const html = this.getHTML(data)
-        this.parent.insertAdjacentHTML('beforeend', html)
+        const html = this.getHTML(data);
+        this.parent.insertAdjacentHTML('beforeend', html);
     }
 }

@@ -43,7 +43,6 @@ class StocksDAO {
     static insert(stock) {
         const stocks = StocksRepository.read();
         
-        // Проверка на существование записи с таким же id
         const existingStock = stocks.find(s => s.id === stock.id);
         if (existingStock) {
             throw new Error(`Stock with id ${stock.id} already exists`);
@@ -77,11 +76,10 @@ class StocksDAO {
             throw new Error(`Stock with id ${id} not found`);
         }
         
-        // Обновляем только переданные поля
         const updatedStock = {
             ...stocks[stockIndex],
             ...stockData,
-            id: id // Гарантируем, что id не изменится
+            id: id 
         };
         
         stocks[stockIndex] = updatedStock;
